@@ -1,0 +1,1374 @@
+kernel/sysctl.c: In function '__do_proc_dointvec.isra.7':
+kernel/sysctl.c:2145:8: warning: 'kbuf' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  char *tmp = skip_spaces(*buf);
+        ^
+kernel/sysctl.c:2298:8: note: 'kbuf' was declared here
+  char *kbuf;
+        ^
+kernel/sysctl.c: In function '__do_proc_doulongvec_minmax':
+kernel/sysctl.c:2146:12: warning: 'kbuf' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  ret = tmp - *buf;
+            ^
+kernel/sysctl.c:2516:8: note: 'kbuf' was declared here
+  char *kbuf;
+        ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from fs/lockd/svc.c:15:
+fs/lockd/svc.c:489:37: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_grace_period, param_set_grace_period, param_get_ulong,
+                                     ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+fs/lockd/svc.c:489:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_grace_period, param_set_grace_period, param_get_ulong,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from fs/lockd/svc.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from fs/lockd/svc.c:15:
+fs/lockd/svc.c:489:37: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_grace_period, param_set_grace_period, param_get_ulong,
+                                     ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+fs/lockd/svc.c:489:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_grace_period, param_set_grace_period, param_get_ulong,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from fs/lockd/svc.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from fs/lockd/svc.c:15:
+fs/lockd/svc.c:489:37: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_grace_period, param_set_grace_period, param_get_ulong,
+                                     ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+fs/lockd/svc.c:489:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_grace_period, param_set_grace_period, param_get_ulong,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from fs/lockd/svc.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+fs/lockd/svc.c:489:37: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_grace_period, param_set_grace_period, param_get_ulong,
+                                     ^
+include/linux/moduleparam.h:153:31: note: in definition of macro '__module_param_call'
+  = { __param_str_##name, ops, perm, isbool ? KPARAM_ISBOOL : 0, \
+                               ^
+fs/lockd/svc.c:489:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_grace_period, param_set_grace_period, param_get_ulong,
+ ^
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from fs/lockd/svc.c:15:
+fs/lockd/svc.c:491:32: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_timeout, param_set_timeout, param_get_ulong,
+                                ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+fs/lockd/svc.c:491:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_timeout, param_set_timeout, param_get_ulong,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from fs/lockd/svc.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from fs/lockd/svc.c:15:
+fs/lockd/svc.c:491:32: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_timeout, param_set_timeout, param_get_ulong,
+                                ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+fs/lockd/svc.c:491:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_timeout, param_set_timeout, param_get_ulong,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from fs/lockd/svc.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from fs/lockd/svc.c:15:
+fs/lockd/svc.c:491:32: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_timeout, param_set_timeout, param_get_ulong,
+                                ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+fs/lockd/svc.c:491:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_timeout, param_set_timeout, param_get_ulong,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from fs/lockd/svc.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+fs/lockd/svc.c:491:32: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_timeout, param_set_timeout, param_get_ulong,
+                                ^
+include/linux/moduleparam.h:153:31: note: in definition of macro '__module_param_call'
+  = { __param_str_##name, ops, perm, isbool ? KPARAM_ISBOOL : 0, \
+                               ^
+fs/lockd/svc.c:491:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_timeout, param_set_timeout, param_get_ulong,
+ ^
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from fs/lockd/svc.c:15:
+fs/lockd/svc.c:493:32: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_udpport, param_set_port, param_get_int,
+                                ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+fs/lockd/svc.c:493:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_udpport, param_set_port, param_get_int,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from fs/lockd/svc.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from fs/lockd/svc.c:15:
+fs/lockd/svc.c:493:32: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_udpport, param_set_port, param_get_int,
+                                ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+fs/lockd/svc.c:493:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_udpport, param_set_port, param_get_int,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from fs/lockd/svc.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from fs/lockd/svc.c:15:
+fs/lockd/svc.c:493:32: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_udpport, param_set_port, param_get_int,
+                                ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+fs/lockd/svc.c:493:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_udpport, param_set_port, param_get_int,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from fs/lockd/svc.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+fs/lockd/svc.c:493:32: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_udpport, param_set_port, param_get_int,
+                                ^
+include/linux/moduleparam.h:153:31: note: in definition of macro '__module_param_call'
+  = { __param_str_##name, ops, perm, isbool ? KPARAM_ISBOOL : 0, \
+                               ^
+fs/lockd/svc.c:493:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_udpport, param_set_port, param_get_int,
+ ^
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from fs/lockd/svc.c:15:
+fs/lockd/svc.c:495:32: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_tcpport, param_set_port, param_get_int,
+                                ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+fs/lockd/svc.c:495:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_tcpport, param_set_port, param_get_int,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from fs/lockd/svc.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from fs/lockd/svc.c:15:
+fs/lockd/svc.c:495:32: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_tcpport, param_set_port, param_get_int,
+                                ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+fs/lockd/svc.c:495:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_tcpport, param_set_port, param_get_int,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from fs/lockd/svc.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from fs/lockd/svc.c:15:
+fs/lockd/svc.c:495:32: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_tcpport, param_set_port, param_get_int,
+                                ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+fs/lockd/svc.c:495:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_tcpport, param_set_port, param_get_int,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from fs/lockd/svc.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+fs/lockd/svc.c:495:32: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(nlm_tcpport, param_set_port, param_get_int,
+                                ^
+include/linux/moduleparam.h:153:31: note: in definition of macro '__module_param_call'
+  = { __param_str_##name, ops, perm, isbool ? KPARAM_ISBOOL : 0, \
+                               ^
+fs/lockd/svc.c:495:1: note: in expansion of macro 'module_param_call'
+ module_param_call(nlm_tcpport, param_set_port, param_get_int,
+ ^
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/sunrpc/types.h:14:0,
+                 from include/linux/sunrpc/sched.h:14,
+                 from include/linux/sunrpc/clnt.h:17,
+                 from fs/nfs/nfs4proc.c:43:
+fs/nfs/nfs4proc.c: In function '__nfs4_get_acl_uncached':
+fs/nfs/nfs4proc.c:3600:10: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'size_t {aka unsigned int}' [-Wformat=]
+  dprintk("%s  buf %p buflen %ld npages %d args.acl_len %ld\n",
+          ^
+include/linux/sunrpc/debug.h:54:58: note: in definition of macro 'dfprintk'
+ # define dfprintk(fac, args...) do { ifdebug(fac) printk(args); } while(0)
+                                                          ^
+fs/nfs/nfs4proc.c:3600:2: note: in expansion of macro 'dprintk'
+  dprintk("%s  buf %p buflen %ld npages %d args.acl_len %ld\n",
+  ^
+fs/nfs/nfs4proc.c:3600:10: warning: format '%ld' expects argument of type 'long int', but argument 6 has type 'size_t {aka unsigned int}' [-Wformat=]
+  dprintk("%s  buf %p buflen %ld npages %d args.acl_len %ld\n",
+          ^
+include/linux/sunrpc/debug.h:54:58: note: in definition of macro 'dfprintk'
+ # define dfprintk(fac, args...) do { ifdebug(fac) printk(args); } while(0)
+                                                          ^
+fs/nfs/nfs4proc.c:3600:2: note: in expansion of macro 'dprintk'
+  dprintk("%s  buf %p buflen %ld npages %d args.acl_len %ld\n",
+  ^
+In file included from include/net/inetpeer.h:15:0,
+                 from include/net/route.h:28,
+                 from include/net/inet_hashtables.h:32,
+                 from include/net/tcp.h:37,
+                 from net/ipv4/tcp.c:272:
+net/ipv4/tcp.c: In function 'tcp_nuke_addr':
+include/net/ipv6.h:336:5: warning: 'in6' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if ((a1 == NULL) || (a2 == NULL))
+     ^
+net/ipv4/tcp.c:3370:19: note: 'in6' was declared here
+  struct in6_addr *in6;
+                   ^
+net/ipv4/tcp_input.c: In function 'tcp_data_queue':
+net/ipv4/tcp_input.c:4356:49: warning: array subscript is above array bounds [-Warray-bounds]
+     tp->selective_acks[i-1] = tp->selective_acks[i];
+                                                 ^
+In file included from include/linux/net.h:63:0,
+                 from include/linux/skbuff.h:26,
+                 from include/linux/icmp.h:86,
+                 from net/ipv4/netfilter/nf_nat_standalone.c:9:
+net/ipv4/netfilter/nf_nat_standalone.c: In function 'nf_nat_standalone_init':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nat_decode_session' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_standalone.c:289:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(ip_nat_decode_session, nat_decode_session);
+  ^
+In file included from include/linux/skbuff.h:17:0,
+                 from include/linux/ip.h:108,
+                 from net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:11:
+net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:373:29: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+                             ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:373:1: note: in expansion of macro 'module_param_call'
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from include/linux/textsearch.h:7,
+                 from include/linux/skbuff.h:27,
+                 from include/linux/ip.h:108,
+                 from net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:11:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/skbuff.h:17:0,
+                 from include/linux/ip.h:108,
+                 from net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:11:
+net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:373:29: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+                             ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:373:1: note: in expansion of macro 'module_param_call'
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from include/linux/textsearch.h:7,
+                 from include/linux/skbuff.h:27,
+                 from include/linux/ip.h:108,
+                 from net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:11:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/skbuff.h:17:0,
+                 from include/linux/ip.h:108,
+                 from net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:11:
+net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:373:29: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+                             ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:373:1: note: in expansion of macro 'module_param_call'
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from include/linux/textsearch.h:7,
+                 from include/linux/skbuff.h:27,
+                 from include/linux/ip.h:108,
+                 from net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:11:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:373:29: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+                             ^
+include/linux/moduleparam.h:153:31: note: in definition of macro '__module_param_call'
+  = { __param_str_##name, ops, perm, isbool ? KPARAM_ISBOOL : 0, \
+                               ^
+net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.c:373:1: note: in expansion of macro 'module_param_call'
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+ ^
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/sysctl.h:933:0,
+                 from include/linux/kmod.h:27,
+                 from include/linux/module.h:13,
+                 from net/ipv4/netfilter/nf_nat_core.c:11:
+net/ipv4/netfilter/nf_nat_core.c: In function 'nf_nat_protocol_unregister':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nf_nat_unknown_protocol' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_core.c:528:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_protos[proto->protonum],
+  ^
+net/ipv4/netfilter/nf_nat_core.c: In function 'nf_nat_init':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nf_nat_unknown_protocol' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_core.c:739:3: note: in expansion of macro 'rcu_assign_pointer'
+   rcu_assign_pointer(nf_nat_protos[i], &nf_nat_unknown_protocol);
+   ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nf_nat_protocol_tcp' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_core.c:740:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_protos[IPPROTO_TCP], &nf_nat_protocol_tcp);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nf_nat_protocol_udp' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_core.c:741:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_protos[IPPROTO_UDP], &nf_nat_protocol_udp);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nf_nat_protocol_icmp' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_core.c:742:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_protos[IPPROTO_ICMP], &nf_nat_protocol_icmp);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nf_nat_seq_adjust' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_core.c:751:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_seq_adjust_hook, nf_nat_seq_adjust);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nfnetlink_parse_nat_setup' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_core.c:753:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nfnetlink_parse_nat_setup_hook,
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nf_nat_get_offset' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_core.c:756:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_ct_nat_offset, nf_nat_get_offset);
+  ^
+In file included from include/linux/sysctl.h:933:0,
+                 from include/linux/kmod.h:27,
+                 from include/linux/module.h:13,
+                 from net/ipv4/netfilter/nf_nat_amanda.c:12:
+net/ipv4/netfilter/nf_nat_amanda.c: In function 'nf_nat_amanda_init':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'help' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_amanda.c:80:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_amanda_hook, help);
+  ^
+In file included from include/linux/sysctl.h:933:0,
+                 from include/linux/kmod.h:27,
+                 from include/linux/module.h:13,
+                 from net/ipv4/netfilter/nf_nat_ftp.c:11:
+net/ipv4/netfilter/nf_nat_ftp.c: In function 'nf_nat_ftp_init':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nf_nat_ftp' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_ftp.c:123:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_ftp_hook, nf_nat_ftp);
+  ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from net/ipv4/netfilter/nf_nat_ftp.c:11:
+net/ipv4/netfilter/nf_nat_ftp.c: At top level:
+net/ipv4/netfilter/nf_nat_ftp.c:134:26: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+                          ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/ipv4/netfilter/nf_nat_ftp.c:134:1: note: in expansion of macro 'module_param_call'
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+ ^
+In file included from include/linux/module.h:17:0,
+                 from net/ipv4/netfilter/nf_nat_ftp.c:11:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from net/ipv4/netfilter/nf_nat_ftp.c:11:
+net/ipv4/netfilter/nf_nat_ftp.c:134:26: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+                          ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/ipv4/netfilter/nf_nat_ftp.c:134:1: note: in expansion of macro 'module_param_call'
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+ ^
+In file included from include/linux/module.h:17:0,
+                 from net/ipv4/netfilter/nf_nat_ftp.c:11:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from net/ipv4/netfilter/nf_nat_ftp.c:11:
+net/ipv4/netfilter/nf_nat_ftp.c:134:26: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+                          ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/ipv4/netfilter/nf_nat_ftp.c:134:1: note: in expansion of macro 'module_param_call'
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+ ^
+In file included from include/linux/module.h:17:0,
+                 from net/ipv4/netfilter/nf_nat_ftp.c:11:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+net/ipv4/netfilter/nf_nat_ftp.c:134:26: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+                          ^
+include/linux/moduleparam.h:153:31: note: in definition of macro '__module_param_call'
+  = { __param_str_##name, ops, perm, isbool ? KPARAM_ISBOOL : 0, \
+                               ^
+net/ipv4/netfilter/nf_nat_ftp.c:134:1: note: in expansion of macro 'module_param_call'
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+ ^
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/sysctl.h:933:0,
+                 from include/linux/kmod.h:27,
+                 from include/linux/module.h:13,
+                 from net/ipv4/netfilter/nf_nat_h323.c:12:
+net/ipv4/netfilter/nf_nat_h323.c: In function 'init':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'set_h245_addr' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_h323.c:584:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(set_h245_addr_hook, set_h245_addr);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'set_h225_addr' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_h323.c:585:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(set_h225_addr_hook, set_h225_addr);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'set_sig_addr' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_h323.c:586:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(set_sig_addr_hook, set_sig_addr);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'set_ras_addr' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_h323.c:587:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(set_ras_addr_hook, set_ras_addr);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nat_rtp_rtcp' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_h323.c:588:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nat_rtp_rtcp_hook, nat_rtp_rtcp);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nat_t120' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_h323.c:589:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nat_t120_hook, nat_t120);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nat_h245' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_h323.c:590:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nat_h245_hook, nat_h245);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nat_callforwarding' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_h323.c:591:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nat_callforwarding_hook, nat_callforwarding);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nat_q931' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_h323.c:592:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nat_q931_hook, nat_q931);
+  ^
+In file included from include/linux/sysctl.h:933:0,
+                 from include/linux/kmod.h:27,
+                 from include/linux/module.h:13,
+                 from net/ipv4/netfilter/nf_nat_irc.c:13:
+net/ipv4/netfilter/nf_nat_irc.c: In function 'nf_nat_irc_init':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'help' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_irc.c:85:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_irc_hook, help);
+  ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from net/ipv4/netfilter/nf_nat_irc.c:13:
+net/ipv4/netfilter/nf_nat_irc.c: At top level:
+net/ipv4/netfilter/nf_nat_irc.c:96:26: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+                          ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/ipv4/netfilter/nf_nat_irc.c:96:1: note: in expansion of macro 'module_param_call'
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+ ^
+In file included from include/linux/module.h:17:0,
+                 from net/ipv4/netfilter/nf_nat_irc.c:13:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from net/ipv4/netfilter/nf_nat_irc.c:13:
+net/ipv4/netfilter/nf_nat_irc.c:96:26: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+                          ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/ipv4/netfilter/nf_nat_irc.c:96:1: note: in expansion of macro 'module_param_call'
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+ ^
+In file included from include/linux/module.h:17:0,
+                 from net/ipv4/netfilter/nf_nat_irc.c:13:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/cache.h:4:0,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from net/ipv4/netfilter/nf_nat_irc.c:13:
+net/ipv4/netfilter/nf_nat_irc.c:96:26: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+                          ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/ipv4/netfilter/nf_nat_irc.c:96:1: note: in expansion of macro 'module_param_call'
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+ ^
+In file included from include/linux/module.h:17:0,
+                 from net/ipv4/netfilter/nf_nat_irc.c:13:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+net/ipv4/netfilter/nf_nat_irc.c:96:26: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+                          ^
+include/linux/moduleparam.h:153:31: note: in definition of macro '__module_param_call'
+  = { __param_str_##name, ops, perm, isbool ? KPARAM_ISBOOL : 0, \
+                               ^
+net/ipv4/netfilter/nf_nat_irc.c:96:1: note: in expansion of macro 'module_param_call'
+ module_param_call(ports, warn_set, NULL, NULL, 0);
+ ^
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/sysctl.h:933:0,
+                 from include/linux/kmod.h:27,
+                 from include/linux/module.h:13,
+                 from net/ipv4/netfilter/nf_nat_pptp.c:20:
+net/ipv4/netfilter/nf_nat_pptp.c: In function 'nf_nat_helper_pptp_init':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'pptp_outbound_pkt' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_pptp.c:285:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_pptp_hook_outbound, pptp_outbound_pkt);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'pptp_inbound_pkt' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_pptp.c:288:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_pptp_hook_inbound, pptp_inbound_pkt);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'pptp_exp_gre' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_pptp.c:291:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_pptp_hook_exp_gre, pptp_exp_gre);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'pptp_nat_expected' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_pptp.c:294:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_pptp_hook_expectfn, pptp_nat_expected);
+  ^
+In file included from include/linux/sysctl.h:933:0,
+                 from include/linux/kmod.h:27,
+                 from include/linux/module.h:13,
+                 from net/ipv4/netfilter/nf_nat_sip.c:13:
+net/ipv4/netfilter/nf_nat_sip.c: In function 'nf_nat_sip_init':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'ip_nat_sip' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_sip.c:554:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_sip_hook, ip_nat_sip);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'ip_nat_sip_seq_adjust' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_sip.c:555:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_sip_seq_adjust_hook, ip_nat_sip_seq_adjust);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'ip_nat_sip_expect' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_sip.c:556:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_sip_expect_hook, ip_nat_sip_expect);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'ip_nat_sdp_addr' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_sip.c:557:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_sdp_addr_hook, ip_nat_sdp_addr);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'ip_nat_sdp_port' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_sip.c:558:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_sdp_port_hook, ip_nat_sdp_port);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'ip_nat_sdp_session' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_sip.c:559:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_sdp_session_hook, ip_nat_sdp_session);
+  ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'ip_nat_sdp_media' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_sip.c:560:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_sdp_media_hook, ip_nat_sdp_media);
+  ^
+In file included from include/linux/sysctl.h:933:0,
+                 from include/linux/kmod.h:27,
+                 from include/linux/module.h:13,
+                 from net/ipv4/netfilter/nf_nat_tftp.c:8:
+net/ipv4/netfilter/nf_nat_tftp.c: In function 'nf_nat_tftp_init':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'help' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/ipv4/netfilter/nf_nat_tftp.c:46:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_nat_tftp_hook, help);
+  ^
+In file included from /root/Samsung_STE_Kernel/arch/arm/include/asm/bitops.h:27:0,
+                 from include/linux/bitops.h:22,
+                 from include/linux/kernel.h:17,
+                 from include/linux/cache.h:4,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from net/ipv4/netfilter/ipt_LOG.c:13:
+include/net/netfilter/xt_log.h: In function 'sb_close':
+/root/Samsung_STE_Kernel/arch/arm/include/asm/system.h:98:3: warning: value computed is not used [-Wunused-value]
+  ((__typeof__(*(ptr)))__xchg((unsigned long)(x),(ptr),sizeof(*(ptr))))
+   ^
+include/net/netfilter/xt_log.h:50:3: note: in expansion of macro 'xchg'
+   xchg(&emergency_ptr, m);
+   ^
+In file included from /root/Samsung_STE_Kernel/arch/arm/include/asm/bitops.h:27:0,
+                 from include/linux/bitops.h:22,
+                 from include/linux/kernel.h:17,
+                 from include/linux/cache.h:4,
+                 from include/linux/time.h:7,
+                 from include/linux/stat.h:60,
+                 from include/linux/module.h:10,
+                 from net/ipv6/netfilter/ip6t_LOG.c:13:
+include/net/netfilter/xt_log.h: In function 'sb_close':
+/root/Samsung_STE_Kernel/arch/arm/include/asm/system.h:98:3: warning: value computed is not used [-Wunused-value]
+  ((__typeof__(*(ptr)))__xchg((unsigned long)(x),(ptr),sizeof(*(ptr))))
+   ^
+include/net/netfilter/xt_log.h:50:3: note: in expansion of macro 'xchg'
+   xchg(&emergency_ptr, m);
+   ^
+In file included from include/linux/skbuff.h:17:0,
+                 from include/linux/netfilter.h:6,
+                 from net/netfilter/nf_conntrack_core.c:15:
+net/netfilter/nf_conntrack_core.c:1418:29: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+                             ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/netfilter/nf_conntrack_core.c:1418:1: note: in expansion of macro 'module_param_call'
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from include/linux/textsearch.h:7,
+                 from include/linux/skbuff.h:27,
+                 from include/linux/netfilter.h:6,
+                 from net/netfilter/nf_conntrack_core.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/skbuff.h:17:0,
+                 from include/linux/netfilter.h:6,
+                 from net/netfilter/nf_conntrack_core.c:15:
+net/netfilter/nf_conntrack_core.c:1418:29: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+                             ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/netfilter/nf_conntrack_core.c:1418:1: note: in expansion of macro 'module_param_call'
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from include/linux/textsearch.h:7,
+                 from include/linux/skbuff.h:27,
+                 from include/linux/netfilter.h:6,
+                 from net/netfilter/nf_conntrack_core.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/skbuff.h:17:0,
+                 from include/linux/netfilter.h:6,
+                 from net/netfilter/nf_conntrack_core.c:15:
+net/netfilter/nf_conntrack_core.c:1418:29: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+                             ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/netfilter/nf_conntrack_core.c:1418:1: note: in expansion of macro 'module_param_call'
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from include/linux/textsearch.h:7,
+                 from include/linux/skbuff.h:27,
+                 from include/linux/netfilter.h:6,
+                 from net/netfilter/nf_conntrack_core.c:15:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+net/netfilter/nf_conntrack_core.c:1418:29: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+                             ^
+include/linux/moduleparam.h:153:31: note: in definition of macro '__module_param_call'
+  = { __param_str_##name, ops, perm, isbool ? KPARAM_ISBOOL : 0, \
+                               ^
+net/netfilter/nf_conntrack_core.c:1418:1: note: in expansion of macro 'module_param_call'
+ module_param_call(hashsize, nf_conntrack_set_hashsize, param_get_uint,
+ ^
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/net.h:63:0,
+                 from include/linux/skbuff.h:26,
+                 from include/linux/netfilter.h:6,
+                 from net/netfilter/nf_conntrack_core.c:15:
+net/netfilter/nf_conntrack_core.c: In function 'nf_conntrack_init':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nf_conntrack_attach' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/netfilter/nf_conntrack_core.c:1585:3: note: in expansion of macro 'rcu_assign_pointer'
+   rcu_assign_pointer(ip_ct_attach, nf_conntrack_attach);
+   ^
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'destroy_conntrack' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/netfilter/nf_conntrack_core.c:1586:3: note: in expansion of macro 'rcu_assign_pointer'
+   rcu_assign_pointer(nf_ct_destroy, destroy_conntrack);
+   ^
+In file included from include/linux/net.h:63:0,
+                 from include/linux/skbuff.h:26,
+                 from include/linux/netfilter.h:6,
+                 from net/netfilter/nf_conntrack_proto.c:13:
+net/netfilter/nf_conntrack_proto.c: In function 'nf_conntrack_l3proto_unregister':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nf_conntrack_l3proto_generic' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/netfilter/nf_conntrack_proto.c:210:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_ct_l3protos[proto->l3proto],
+  ^
+net/netfilter/nf_conntrack_proto.c: In function 'nf_conntrack_l4proto_unregister':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nf_conntrack_l4proto_generic' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/netfilter/nf_conntrack_proto.c:345:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(nf_ct_protos[l4proto->l3proto][l4proto->l4proto],
+  ^
+net/netfilter/nf_conntrack_proto.c: In function 'nf_conntrack_proto_init':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'nf_conntrack_l3proto_generic' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/netfilter/nf_conntrack_proto.c:370:3: note: in expansion of macro 'rcu_assign_pointer'
+   rcu_assign_pointer(nf_ct_l3protos[i],
+   ^
+net/netfilter/nf_conntrack_h323_main.c: In function 'h245_help':
+net/netfilter/nf_conntrack_h323_main.c:172:11: warning: 'dataoff' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   tpktoff = *dataoff + *datalen;
+           ^
+net/netfilter/nf_conntrack_h323_main.c:570:6: note: 'dataoff' was declared here
+  int dataoff;
+      ^
+net/netfilter/nf_conntrack_h323_main.c:176:16: warning: 'datalen' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   tpkt = *data + *datalen;
+                ^
+net/netfilter/nf_conntrack_h323_main.c:569:6: note: 'datalen' was declared here
+  int datalen;
+      ^
+net/netfilter/nf_conntrack_h323_main.c: In function 'q931_help':
+net/netfilter/nf_conntrack_h323_main.c:172:11: warning: 'dataoff' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   tpktoff = *dataoff + *datalen;
+           ^
+net/netfilter/nf_conntrack_h323_main.c:1123:6: note: 'dataoff' was declared here
+  int dataoff;
+      ^
+net/netfilter/nf_conntrack_h323_main.c:176:16: warning: 'datalen' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   tpkt = *data + *datalen;
+                ^
+net/netfilter/nf_conntrack_h323_main.c:1122:6: note: 'datalen' was declared here
+  int datalen;
+      ^
+In file included from include/linux/sysctl.h:933:0,
+                 from include/linux/kmod.h:27,
+                 from include/linux/module.h:13,
+                 from net/sched/sch_generic.c:15:
+net/sched/sch_generic.c: In function 'dev_graft_qdisc':
+include/linux/rcupdate.h:369:12: warning: the comparison will always evaluate as 'true' for the address of 'noop_qdisc' will never be NULL [-Waddress]
+       ((v) != NULL)) \
+            ^
+include/linux/rcupdate.h:708:2: note: in expansion of macro '__rcu_assign_pointer'
+  __rcu_assign_pointer((p), (v), __rcu)
+  ^
+net/sched/sch_generic.c:678:2: note: in expansion of macro 'rcu_assign_pointer'
+  rcu_assign_pointer(dev_queue->qdisc, &noop_qdisc);
+  ^
+In file included from include/linux/sched.h:55:0,
+                 from net/sunrpc/svc.c:14:
+net/sunrpc/svc.c:117:30: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(pool_mode, param_set_pool_mode, param_get_pool_mode,
+                              ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/sunrpc/svc.c:117:1: note: in expansion of macro 'module_param_call'
+ module_param_call(pool_mode, param_set_pool_mode, param_get_pool_mode,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from include/linux/device.h:23,
+                 from include/linux/mfd/ab8500.h:11,
+                 from arch/arm/mach-ux500/include/mach/irqs-board-mop500.h:12,
+                 from arch/arm/mach-ux500/include/mach/irqs.h:54,
+                 from /root/Samsung_STE_Kernel/arch/arm/include/asm/irq.h:4,
+                 from /root/Samsung_STE_Kernel/arch/arm/include/asm/hardirq.h:6,
+                 from include/linux/hardirq.h:7,
+                 from include/linux/interrupt.h:12,
+                 from net/sunrpc/svc.c:19:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/sched.h:55:0,
+                 from net/sunrpc/svc.c:14:
+net/sunrpc/svc.c:117:30: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(pool_mode, param_set_pool_mode, param_get_pool_mode,
+                              ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/sunrpc/svc.c:117:1: note: in expansion of macro 'module_param_call'
+ module_param_call(pool_mode, param_set_pool_mode, param_get_pool_mode,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from include/linux/device.h:23,
+                 from include/linux/mfd/ab8500.h:11,
+                 from arch/arm/mach-ux500/include/mach/irqs-board-mop500.h:12,
+                 from arch/arm/mach-ux500/include/mach/irqs.h:54,
+                 from /root/Samsung_STE_Kernel/arch/arm/include/asm/irq.h:4,
+                 from /root/Samsung_STE_Kernel/arch/arm/include/asm/hardirq.h:6,
+                 from include/linux/hardirq.h:7,
+                 from include/linux/interrupt.h:12,
+                 from net/sunrpc/svc.c:19:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+In file included from include/linux/sched.h:55:0,
+                 from net/sunrpc/svc.c:14:
+net/sunrpc/svc.c:117:30: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(pool_mode, param_set_pool_mode, param_get_pool_mode,
+                              ^
+include/linux/kernel.h:700:55: note: in definition of macro 'BUILD_BUG_ON_ZERO'
+ #define BUILD_BUG_ON_ZERO(e) (sizeof(struct { int:-!!(e); }))
+                                                       ^
+include/linux/moduleparam.h:160:2: note: in expansion of macro '__module_param_call'
+  __module_param_call(MODULE_PARAM_PREFIX,   \
+  ^
+net/sunrpc/svc.c:117:1: note: in expansion of macro 'module_param_call'
+ module_param_call(pool_mode, param_set_pool_mode, param_get_pool_mode,
+ ^
+In file included from include/linux/module.h:17:0,
+                 from include/linux/device.h:23,
+                 from include/linux/mfd/ab8500.h:11,
+                 from arch/arm/mach-ux500/include/mach/irqs-board-mop500.h:12,
+                 from arch/arm/mach-ux500/include/mach/irqs.h:54,
+                 from /root/Samsung_STE_Kernel/arch/arm/include/asm/irq.h:4,
+                 from /root/Samsung_STE_Kernel/arch/arm/include/asm/hardirq.h:6,
+                 from include/linux/hardirq.h:7,
+                 from include/linux/interrupt.h:12,
+                 from net/sunrpc/svc.c:19:
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+net/sunrpc/svc.c:117:30: warning: passing argument 1 of '__check_old_set_param' from incompatible pointer type [-Wincompatible-pointer-types]
+ module_param_call(pool_mode, param_set_pool_mode, param_get_pool_mode,
+                              ^
+include/linux/moduleparam.h:153:31: note: in definition of macro '__module_param_call'
+  = { __param_str_##name, ops, perm, isbool ? KPARAM_ISBOOL : 0, \
+                               ^
+net/sunrpc/svc.c:117:1: note: in expansion of macro 'module_param_call'
+ module_param_call(pool_mode, param_set_pool_mode, param_get_pool_mode,
+ ^
+include/linux/moduleparam.h:167:1: note: expected 'int (*)(const char *, const struct kernel_param *)' but argument is of type 'int (*)(const char *, struct kernel_param *)'
+ __check_old_set_param(int (*oldset)(const char *, const struct kernel_param *))
+ ^
+net/sunrpc/xdr.c: In function 'write_bytes_to_xdr_buf':
+net/sunrpc/xdr.c:263:9: warning: 'subbuf.page_base' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  pgbase &= ~PAGE_CACHE_MASK;
+         ^
+net/sunrpc/xdr.c:912:17: note: 'subbuf.page_base' was declared here
+  struct xdr_buf subbuf;
+                 ^
+net/sunrpc/xdr.c:286:2: warning: 'subbuf.pages' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  flush_dcache_page(*pgto);
+  ^
+net/sunrpc/xdr.c:912:17: note: 'subbuf.pages' was declared here
+  struct xdr_buf subbuf;
+                 ^
+net/sunrpc/xdr.c: In function 'xdr_encode_word':
+net/sunrpc/xdr.c:263:9: warning: 'subbuf.page_base' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  pgbase &= ~PAGE_CACHE_MASK;
+         ^
+net/sunrpc/xdr.c:912:17: note: 'subbuf.page_base' was declared here
+  struct xdr_buf subbuf;
+                 ^
+net/sunrpc/xdr.c:286:2: warning: 'subbuf.pages' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  flush_dcache_page(*pgto);
+  ^
+net/sunrpc/xdr.c:912:17: note: 'subbuf.pages' was declared here
+  struct xdr_buf subbuf;
+                 ^
+net/sunrpc/xdr.c: In function 'read_bytes_from_xdr_buf':
+net/sunrpc/xdr.c:307:9: warning: 'subbuf.page_base' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  pgbase &= ~PAGE_CACHE_MASK;
+         ^
+net/sunrpc/xdr.c:881:17: note: 'subbuf.page_base' was declared here
+  struct xdr_buf subbuf;
+                 ^
+net/sunrpc/xdr.c:321:10: warning: 'subbuf.pages' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    pgfrom++;
+          ^
+net/sunrpc/xdr.c:881:17: note: 'subbuf.pages' was declared here
+  struct xdr_buf subbuf;
+                 ^
+net/sunrpc/xdr.c: In function 'xdr_decode_word':
+net/sunrpc/xdr.c:307:9: warning: 'subbuf.page_base' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  pgbase &= ~PAGE_CACHE_MASK;
+         ^
+net/sunrpc/xdr.c:881:17: note: 'subbuf.page_base' was declared here
+  struct xdr_buf subbuf;
+                 ^
+net/sunrpc/xdr.c:321:10: warning: 'subbuf.pages' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    pgfrom++;
+          ^
+net/sunrpc/xdr.c:881:17: note: 'subbuf.pages' was declared here
+  struct xdr_buf subbuf;
+                 ^
+net/sunrpc/xdr.c: In function 'xdr_buf_read_netobj':
+net/sunrpc/xdr.c:307:9: warning: 'subbuf.page_base' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  pgbase &= ~PAGE_CACHE_MASK;
+         ^
+net/sunrpc/xdr.c:952:17: note: 'subbuf.page_base' was declared here
+  struct xdr_buf subbuf;
+                 ^
+net/sunrpc/xdr.c:321:10: warning: 'subbuf.pages' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    pgfrom++;
+          ^
+net/sunrpc/xdr.c:952:17: note: 'subbuf.pages' was declared here
+  struct xdr_buf subbuf;
+                 ^
+net/sunrpc/xdr.c:307:9: warning: 'subbuf.page_base' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  pgbase &= ~PAGE_CACHE_MASK;
+         ^
+net/sunrpc/xdr.c:881:17: note: 'subbuf.page_base' was declared here
+  struct xdr_buf subbuf;
+                 ^
+net/sunrpc/xdr.c:321:10: warning: 'subbuf.pages' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    pgfrom++;
+          ^
+net/sunrpc/xdr.c:881:17: note: 'subbuf.pages' was declared here
+  struct xdr_buf subbuf;
+                 ^
+net/unix/af_unix.c: In function 'unix_dgram_sendmsg':
+net/unix/af_unix.c:1473:9: warning: 'hash' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   other = unix_find_other(net, sunaddr, namelen, sk->sk_type,
+         ^
+net/unix/af_unix.c: In function 'unix_stream_connect':
+net/unix/af_unix.c:1092:8: warning: 'hash' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  other = unix_find_other(net, sunaddr, addr_len, sk->sk_type, hash, &err);
+        ^
+net/unix/af_unix.c: In function 'unix_dgram_connect':
+net/unix/af_unix.c:973:9: warning: 'hash' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   other = unix_find_other(net, sunaddr, alen, sock->type, hash, &err);
+         ^
+net/unix/af_unix.c: In function 'unix_bind':
+net/unix/af_unix.c:255:47: warning: 'hash' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  sk_for_each(s, node, &unix_socket_table[hash ^ type]) {
+                                               ^
+net/unix/af_unix.c:813:11: note: 'hash' was declared here
+  unsigned hash;
+           ^
+lib/decompress_unlzo.c:82:6: warning: 'get_unaligned_be32' is static but used in inline function 'parse_header' which is not static
+  if (get_unaligned_be32(parse) & HEADER_HAS_FILTER)
+      ^
+lib/decompress_unlzo.c:78:12: warning: 'get_unaligned_be16' is static but used in inline function 'parse_header' which is not static
+  version = get_unaligned_be16(parse);
+            ^
+lib/decompress_unlzo.c:72:19: warning: 'lzop_magic' is static but used in inline function 'parse_header' which is not static
+   if (*parse++ != lzop_magic[l])
+                   ^
+WARNING: modpost: Found 1 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'
+drivers/built-in.o: In function `read_mailbox_0':
+/root/Samsung_STE_Kernel/drivers/mfd/db8500-prcmu.c:3220: undefined reference to `ux500_ci_dbg_console'
+drivers/built-in.o: In function `alps_ioctl':
+/root/Samsung_STE_Kernel/drivers/sensor/alps/alps-input_golden.c:86: undefined reference to `hscd_activate'
+/root/Samsung_STE_Kernel/drivers/sensor/alps/alps-input_golden.c:106: undefined reference to `hscd_activate'
+drivers/built-in.o: In function `hscd_poll':
+/root/Samsung_STE_Kernel/drivers/sensor/alps/alps-input_golden.c:231: undefined reference to `hscd_get_magnetic_field_data'
+drivers/built-in.o: In function `sipc_handler':
+/root/Samsung_STE_Kernel/drivers/phone_svn/svnet/sipc4.c:466: undefined reference to `_fmt_wakelock_timeout'
+drivers/built-in.o: In function `sraw_handler':
+/root/Samsung_STE_Kernel/drivers/phone_svn/svnet/sipc4.c:489: undefined reference to `_non_fmt_wakelock_timeout'
+drivers/built-in.o: In function `sipc_read':
+/root/Samsung_STE_Kernel/drivers/phone_svn/svnet/sipc4.c:2130: undefined reference to `_non_fmt_wakelock_timeout'
+/root/Samsung_STE_Kernel/drivers/phone_svn/svnet/sipc4.c:2130: undefined reference to `_non_fmt_wakelock_timeout'
+/root/Samsung_STE_Kernel/drivers/phone_svn/svnet/sipc4.c:2128: undefined reference to `_fmt_wakelock_timeout'
+net/built-in.o: In function `wiphy_rfkill_start_polling':
+/root/Samsung_STE_Kernel/net/wireless/core.c:629: undefined reference to `rfkill_resume_polling'
+make: *** [.tmp_vmlinux1] Fout 1
