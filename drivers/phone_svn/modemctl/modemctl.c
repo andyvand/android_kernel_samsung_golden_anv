@@ -135,7 +135,7 @@ static int sim_get_reference_status(struct modemctl *);
 static void sim_irq_debounce_timer_func(unsigned);
 
 
-#if defined (CONFIG_TARGET_LOCALE_EUR) ||  defined (CONFIG_ARIES_EUR) || defined(CONFIG_ARIES_LATONA)
+#if defined (CONFIG_TARGET_LOCALE_EUR) ||  defined (CONFIG_ARIES_EUR) || defined(CONFIG_ARIES_LATONA) || (CONFIG_U8500_MODEM)
 static void xmm_on(struct modemctl *);
 static void xmm_off(struct modemctl *);
 static void xmm_reset(struct modemctl *);
@@ -201,7 +201,7 @@ static const struct attribute_group modemctl_group = {
 	.attrs = modemctl_attributes,
 };
 
-#if defined (CONFIG_TARGET_LOCALE_EUR) ||  defined (CONFIG_ARIES_EUR) || defined(CONFIG_ARIES_LATONA)
+#if defined (CONFIG_TARGET_LOCALE_EUR) ||  defined (CONFIG_ARIES_EUR) || defined(CONFIG_ARIES_LATONA) || (CONFIG_U8500_MODEM)
 /* declare mailbox init function for xmm */
 extern void onedram_init_mailbox(void);
 
